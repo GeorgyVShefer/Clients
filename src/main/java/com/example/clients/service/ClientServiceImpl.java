@@ -20,7 +20,7 @@ public class ClientServiceImpl implements ClientService {
         return repository.findById(id).orElse(null);
     }
 
-    public Client create(Client client){
+    public Client createClient(Client client){
         return repository.save(client);
     }
 }
