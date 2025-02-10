@@ -19,4 +19,8 @@ public class ClientServiceImpl implements ClientService {
     public Client  getById(Long id){
         return repository.findById(id).orElse(null);
     }
+
+    public Client create(Client client){
+        return repository.save(client);
+    }
 }
